@@ -1,0 +1,19 @@
+/* bugSolution.css */
+#myElement {
+  width: calc(100% - 10px);
+  /* Correct: Uses px units and correct operator precedence */
+}
+
+#anotherElement {
+  height: calc(50% - 2em);
+  /* Correct: Uses compatible units*/
+}
+
+/* Avoid this:
+#incorrectElement {
+  width: calc(100% - 10); /* Incorrect: Missing units */
+  /* Or 
+#incorrectElement2 {
+  padding: calc(50% + 10px); /* Incorrect: padding doesn't support percentage directly*/
+}
+*/
